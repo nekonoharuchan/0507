@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自己紹介</title>
+
+    <style type="text/css">
+        h1{
+            padding: 1rem 2rem;
+            color: #fff;
+            border-radius: 10px;
+            background-image: -webkit-gradient(linear, left top, right top, from(#f83600), to(#f9d423));
+            background-image: -webkit-linear-gradient(left, #f83600 0%, #f9d423 100%);
+            background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+            text-align: center;
+            width: 80%;
+            margin: 20px auto 60px;
+        }
+        h2 {
+            position: relative;
+            padding: 1rem .5rem;
+        }
+
+        h2:after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        content: '';
+        background-image: -webkit-gradient(linear, left top, right top, from(#fa709a), to(#fee140));
+        background-image: -webkit-linear-gradient(left, #fa709a 0%, #fee140 100%);
+        background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+        }
+        .main{
+            width: 1100px;
+            margin: 0 auto;
+        }
+        .content{
+            margin-bottom: 40px;
+        }
+        p,ul,dl{
+            margin-left: 2rem;
+        }
+        .name{
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        dt{
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            font-weight:bold;
+            padding: 10px;
+            border-left: #ffac12 solid 8px;
+        }
+        dd{
+            border-top: #8a8a8a dotted 2px;
+            padding: 10px;
+        }
+        img{
+            width: 250px;
+            height: 300px;
+            object-fit: cover;
+        }
+        .big_txt{
+            font-size: 3rem;
+            font-weight: bolder;
+            font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+            -webkit-text-stroke: .8px #000;
+        }
+        footer{
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>自己紹介 ver.2</h1>
+
+    <section class="main">
+        <section class="content">
+            <h2>名前</h2>
+            <p class="name"><ruby>森<rt>モリ</rt></ruby>&nbsp;<ruby>春稀<rt>ハルキ</rt></ruby></p>
+        </section>
+
+        <section class="content">
+            <h2>趣味</h2>
+            <dl>
+                <dt>ゲーム開発</dt>
+                <dd>
+                    JavaScriptをメインにゲーム開発を行っています。アドベンチャーゲーム、ホラーゲーム、アクションゲームなど幅広く手掛けています。<br>
+                    最近はギャルゲーの制作にハマっています。
+                </dd>
+            </dl>
+
+            <dl>
+                <dt>将棋</dt>
+                <dd>
+                    高校時代に将棋部の副部長やっていました。藤井ブームにのっかって高1から始め、それ以来5年ほど続けている趣味です。<br>
+                    今は正式に初段をとれるように練習中です（一応、県大会で優勝したことも♪）
+                </dd>
+            </dl>
+        </section>
+
+        <section class="content">
+            <h2>最近はまっているもの</h2>
+            <p>ランニング</p>
+        </section>
+
+        <section class="content">
+            <h2>推しはだれ？</h2>
+            <img src="joji.jpg">
+            <p>中田譲治さん(声優)</p>
+        </section>
+
+        <section class="content">
+            <h2>私のここは知っておいてほしい</h2>
+            <ul>
+                <li>ボケ担当</li>
+                <li>歩く自堕落</li>
+                <li>究極のインドア派</li>
+                <li>四捨五入したらニート</li>
+            </ul>
+        </section>
+
+        <section class="content">
+            <h2>今日の気分</h2>
+            <p class="big_txt">眠い！！！！</p>
+            <p>ゴールデンウイーク中に寝すぎた。それと低気圧！！</p>
+        </section>
+    </section>
+
+    <footer><small>©Mori_Haruki</small></footer>
+</body>
+</html>

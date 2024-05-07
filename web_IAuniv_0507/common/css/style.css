@@ -1,0 +1,44 @@
+/* header */
+#headerInner{
+    width: 960px;
+    margin: 15px auto;
+    overflow: hidden;/* floatを使うと高さが消えるため、必須プロパティとなる */
+}
+#logo{
+    float: left;
+}
+#search{
+    float: right;
+}
+    #search form{
+        float: left;
+        margin-right: 1rem;
+        background-color: #ebebeb;
+        border-radius: 10px;
+        padding: 5px 10px;
+    }
+        #search form img{
+            vertical-align: middle;
+        }
+    #search div{
+        float: right;
+    }
+
+#Gnavi{
+    clear: both;/* floatの真下の要素に記述すると、回り込みを解除できる */
+    background-color: #0071a5;
+    width: 100%;
+}
+#Gnavi ul{
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+}
+main{
+    width: 960px;
+    margin: 0 auto;
+}
