@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_test</title>
+</head>
+<body>
+
+    <input type="button" value="ソ連" onclick="act()">
+
+    <br>
+
+    <script>
+        const $ = document;
+        const c = console.log;
+
+        $.write("こんにちは……<br><br>");
+
+        $.write("窓なぁぁぁぁぁぁぁぁぃ！！？？<br><br>");//これより以下、講習内容に沿いながら自己流に改造
+        $.write("え？え？え？え？<br><br>");
+        $.write("窓なぁぁぁぁぁぁぁぁぁぁぁぁぁぃぃぃ！！！！？？？？<br><br>");
+        $.write("栗原ぁぁぁぁぁぁぁぁぁぁぁぁぁぁぁぁぁぁぁぁぁぁぁ！！！！！！！！！<br><br>");
+
+        c("※お使いの端末は正常です。知らんけど");
+
+        alert("お使いの脳みそから異常を検知しました。再起動を推奨します");
+
+        $.bgColor = "#000";
+        $.fgColor = "green";
+
+        var word = "ｵﾝﾄﾞｩﾙﾙﾗｷﾞｯﾀﾝﾃﾞｨｽｶ!!<br><br>";
+
+        $.write(word);
+        c(word);
+
+        $.write(typeof $);//このtypeofは、型の判定を行ってくれるもの
+
+        b();
+
+        let array = ["螺旋階段","カブトムシ","廃墟の街","イチジクのタルト","カブトムシ","ドロローサの道","カブトムシ","特異点","ジョット","天使","紫陽花","カブトムシ","特異点","秘密の皇帝"];
+
+        for(let i = 0; i < array.length; i++){
+            $.write(array[i]);
+            if(i < array.length -1){    //最後以外に句点をつけるもの
+                $.write( "、");
+            }
+        }
+
+        b();
+
+        let name = "タチバナ";
+        $.write("こんにちは、" + name + "さん……" + word);
+
+        b();
+
+        var oe = "s";
+
+        if(oe % 2 === 0){
+            $.write("偶数");
+        }else if(oe % 2 === 1){
+            $.write("奇数");
+        }else{
+            $.write("えっと、内容よく見てもらって良いっすか？<ruby>問題<rt>それ</rt></ruby>って貴方のデータ型ですよね？");
+        }
+
+        b();
+
+        let age = -180; 
+        if(0 <= age && 120 >= age){
+            $.write("まだ人間");
+        }else if(120 < age){
+            $.write("おめぇさてはバケモンだな？");
+        }else{
+            $.write("もはやただのタンパク質で草");
+        }
+
+        b();
+
+        for(let i = 1; i < 7; i++){
+            $.write("羊が" + i + "匹");
+            if(i < 6){
+                $.write( "、");
+            }
+        }
+
+        $.write( "<br><br>そして彼らは二度と帰ってこなかった。数えたいと思っても数えられないので、そのうち羊は、考えるのをやめた");
+
+        b();
+
+        let a = [11,22,33,44,55,66,77,88,99];
+
+        for(let i = 0; i < a.length; i++){
+            $.write(a[i]);
+            if(i < a.length - 1){
+                $.write( "、");
+            }
+        }
+
+        b();
+
+        for(let i = 3; i >= 0; i--){
+            $.write("寿命残り" + i + "秒");
+            if(i > 0){
+                $.write( "、");
+            }
+        }
+
+        function b(){
+            $.write("<br><br>");
+        }
+
+        console.log(Math.floor(3.1415926535897932384626));
+
+        function act(){
+            $.bgColor = "red";
+            $.fgColor = "yellow";
+        }
+
+
+
+        function rect(width,height){
+            $.write((width * height) + "㎡");
+        }
+
+        b();
+        rect(150,200);
+
+
+        // パブロ・ディエゴ・ホセ・フランシスコ・デ・パウラ・ホアン・ネポムセーノ・マリア・デロス・レメディオス・クリスピーン・クリスピアーノ・デ・ラ・サンティシマ・トリニダート・ルイス・イ・ピカソ
+
+
+
+
+    </script>  
+
+</body>
+</html>
