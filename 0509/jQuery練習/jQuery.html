@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+
+    <h1>ライブラリ</h1>
+
+    <p>これはテストである</p>
+
+    
+    <input type="button" value="やるんだな？今、ここで！" id="btn">
+
+    <!-- 読み込み -->
+    <script src="jQuery.js"></script>
+
+    <script>
+        
+        $("#body") .css("background-color","black");
+        $("#body") .css("color","green");
+
+
+        $(function(){
+            $("#btn").on("click",function(){
+                window.alert("キラークイーンは既にボタンに触れている");
+                document.write("※ファイルがクラッシュしました。知らんけど");
+            });
+        });
+    </script>
+    
+</body>
+</html>
