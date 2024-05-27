@@ -1,0 +1,34 @@
+氏名：森 春稀
+
+
+
+問1　3番
+
+
+問2　基本問題
+
+①
+select * from players limit 100;
+
+②
+select player_id , count(player_id) from goals group by player_id;
+
+③
+select player_id , count(player_id) from goals group by player_id order by count(player_id) desc;
+
+
+問2　応用問題
+
+①
+update countries set ranking = ranking -1;
+
+②
+update countries set ranking = 1 where id = 29;
+
+③
+select * from players order by  ( weight / height * height)  desc;
+
+④
+
+
+⑤

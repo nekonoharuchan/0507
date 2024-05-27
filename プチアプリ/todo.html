@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>「Your&nbsp;Doing」タスク管理アプリ</title>
+<link rel="stylesheet" href="style.css"></link>
+<meta name=”viewport” content=”width=device-width,initial-scale=1.0″>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<header><div class="header_inner"><h1 class="merriweather">Your&nbsp;Doing</h1></div></header>
+
+<main class="flex">
+    <section class="flex_se">
+        <h2>タスクの登録</h2>
+
+        <form action="todo.php" method="post">
+
+            <p class="inputT"><span class="ast">*</span>タスク名&nbsp;<input type="text" class="input_box" name="title" value="" placeholder="16文字以内" required maxlength="16"></p>
+            <p class="inputT"><span class="ast">*</span>締め切り&nbsp;<input type="date" class="input_box" name="deadline" value=""  required></p>
+            <p class="inputT">登録日&nbsp;<input type="date" class="input_box" name="indate" value=""></p>
+            <p class="inputT">コメント</p>
+            <textarea name="comment" cols="40" rows="8" placeholder="タスクの内容"></textarea>
+            <p><small class="ast">*&nbsp;は必須項目です</small></p>
+            <p><input class="btn" type="submit" name="submit" value="登録"></p>
+            <input type="hidden" name="mode" value="register">
+
+        </form>
+    </section>
+    <section class="flex_se">
+        <h2>タスクリスト</h2>
+
+        <p>まだ何も登録されていません</p>
+    </section>
+
+    <a class="top_btn" href="#">TOP
+        <span class="arrow1"></span>
+        <span class="arrow2"></span>
+      </a>
+</main>
+<footer><small>&copy;2024&nbsp;Mori&nbsp;Haruki&nbsp;All&nbsp;right&nbsp;reserved</small></footer>
+</body>
+</html>
